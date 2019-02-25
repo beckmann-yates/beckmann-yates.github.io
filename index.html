@@ -15,7 +15,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,12 +52,17 @@ body, html {
     min-height: 400px;
 }
 
+.bgimg-7 {
+    background-image: url("Photos/icecream.jpg");
+    min-height: 400px;
+}
+
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1200px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
     background-attachment: scroll;
     min-height: 400px;
   }
@@ -78,13 +83,15 @@ body, html {
         <a href="#venue" class="w3-bar-item w3-button w3-hide-small"> Venue/Ort</a>
         <a href="#travel" class="w3-bar-item w3-button w3-hide-small"> Travel/Anreise</a>
         <a href="#accommodation" class="w3-bar-item w3-button w3-hide-small"> Accommodation/Unterkunft</a>
+	<a href="#FAQ" class="w3-bar-item w3-button w3-hide-small">FAQ/Fragen</a>
         <a href="#RSVP" class="w3-bar-item w3-button w3-hide-small"> RSVP</a>
     </div>
 
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-        <a href="#venue" class="w3-bar-item w3-button" onclick="toggleFunction()">Venue</a>
-        <a href="#travel" class="w3-bar-item w3-button" onclick="toggleFunction()">Travel</a>
-        <a href="#accommodation" class="w3-bar-item w3-button" onclick="toggleFunction()">Accommodation</a>
+        <a href="#venue" class="w3-bar-item w3-button" onclick="toggleFunction()">Venue/Ort</a>
+        <a href="#travel" class="w3-bar-item w3-button" onclick="toggleFunction()">Travel/Anreise</a>
+        <a href="#accommodation" class="w3-bar-item w3-button" onclick="toggleFunction()">Accommodation/Unterkunft</a>
+	<a href="#accommodation" class="w3-bar-item w3-button" onclick="toggleFunction()">FAQ/Fragen</a>
         <a href="#RSVP" class="w3-bar-item w3-button" onclick="toggleFunction()">RSVP</a>
     </div>
 </div>
@@ -215,11 +222,9 @@ body, html {
 </div>
 
 <div class="w3-content w3-container w3-padding-64">
-    The house itself can only be reached by car, as there is little to no public
+    The venue itself and the accommodation can only be reached by car, as there is little to no public
     transport in the area. We therefore strongly recommend coming with your own
-    car, renting a car nearby or carpooling with other guests. If you have
-    trouble getting to the venue, let us know and we will organise to have you
-    picked up from the train station in Montargis.
+    car, renting a car at the airport or carpooling with other guests. Please arrive at your accommodation at the latest at 3pm on Saturday the 20th July. Departure is on Sunday, the 21st of July by lunchtime.
     <p>
     Plane:
     <br>
@@ -245,10 +250,8 @@ body, html {
     <p>
 
     <em>
-    Das Haus selbst ist mit öffentlichen Verkehrsmitteln nur schwer zu
-    erreichen. Wir empfehlen daher mit dem Auto anzureisen, oder am Flughafen
-    ein Auto zu mieten. Wer kein Auto fährt kann sich bei uns melden, und wir
-    werden uns Mühe geben Transport vom Bahnhof in Montargis zu organisieren.
+    Der Ort der Feier und die Unterkünfte sind  mit öffentlichen Verkehrsmitteln nicht  zu
+    erreichen. Wir empfehlen daher mit dem Auto anzureisen, sich mit anderen Gästen abzusprechen oder am Flughafen ein Auto zu mieten. 
     </em>
     </p>
     <p>
@@ -265,7 +268,7 @@ body, html {
     Zug:
     <br>
     Die nächsten Bahnhöfe befinden sich in Montargis (30 Minuten mit dem Auto,
-    Direktzüge nach Paris) und Orleans (40 Minutem mit dem Auto).
+    Direktzüge nach Paris) und Orleans (40 Minuten mit dem Auto).
     </em>
     </p>
     <p>
@@ -288,14 +291,20 @@ body, html {
     <p>
     As there is limited accommodation in the areay, we have organised sufficient
     accommodation to house everyone, either at the reception venue or at a
-    nearby holiday home. This way we will be able to provide comfortable but
+    nearby holiday home or hotel. This way we will be able to provide comfortable but
     communal (you may be asked to share a room) accommodation for 30 euro per
-    night per person from Friday to Sunday.
+    night per person from Friday to Sunday. We have also pre-reserved a few rooms in the nearby hotel <a href="https://www.hotelausauvage.fr/">"Hotel au Sauvage"</a>. Please contact us for details.
+    </p>
+    
+    <p>
+    Please arrive at your accommodation at the latest at 3pm on Saturday the 20th July. Departure is on Sunday, the 21st of July, by lunchtime. We will organise transport from the the hotel or houses we booked to the event venue and back.
+    </p>
+    
     </p>
     <p>
-    However,if you prefer to find your own accommodation, hotels can be found in
-    Lorris, Vitry-aux-Loges or in Montargis and there are a number of other
-    holdiday homes in the area (AirBnb is a good source).
+      If you prefer to find your own accommodation, hotels can be found in
+      Lorris, Vitry-aux-Loges or in Montargis and there are a number of other
+      holdiday homes in the area (AirBnb is a good source).
     </p>
     <p>
     Please let us know if you would like to stay with us or if you would prefer
@@ -308,13 +317,20 @@ body, html {
     <em>
     Da es in der Gegend nur wenig Unterkunftsmöglichkeiten gibt haben wir
     genügend Unterkünfte für alle organisiert, entweder am Ort der Feier selbst
-    oder in einem Ferienhaus in der Nähe. Wir könnend daher allen Gästen bequeme
+    oder in einem Ferienhaus oder Hotel in der Nähe. Wir könnend daher allen Gästen bequeme
     aber gemeinschaftliche Unterkunft (die meisten Zimmer haben mehrere Betten)
     für 30 Euro pro Person pro Nacht anbieten. Die Häuser stehen von Freitag bis
-    Sonntag zur verfügung.
+    Sonntag zur Verfügung. Für diejenigen die ein Hotel bevorzugen haben wir im <a href="https://www.hotelausauvage.fr/">"Hotel au Sauvage"</a> in Lorris für Samstag Nacht ein paar Zimmer vor-reserviert. Bitte kontaktier uns für weitere Details.
     </em>
     </p>
-    <p>
+
+<p>
+  <em>
+    Anreise ist bis spätestens um 3 Uhr nachmittags am Samstag, 20. Juli. Abreise ist Sonntagmittag. Wir organisieren Transport zwischen den Unterkünften und der Feier.
+  </em>
+</p>
+      
+<p>
     <em>
     Wer lieber seine eigene Unterkunft mieten möchte kann in Lorris,
     Vitry-aux-Loges oder in Montargis Hotels finden, oder eines der vielen
@@ -329,6 +345,80 @@ body, html {
     </p>
 </div>
 
+<div class="bgimg-7 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">FAQ/Häufige Fragen</span>
+    </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="FAQ">
+  <!--
+  <p>
+    <b>Do you have a gift registry - <em> Habt ihr eine Wunschliste? </em> </b>
+    </p>
+  <p>
+    We do not have a gift registry, and would ask you to refrain from physical gifts. If you would like to give us a gift, we would love a contribution to our honeymoon. </p>
+  <p>
+    <em>
+    Wir haben keine Wunschliste, und bitten darum auf physische Geschenke zu verzichten. Wenn ihr uns ein Geschenk machen möchtet, dann würden wir uns sehr über einen Beitrag zur Hochzeitsreise freuen.</em> 
+  </p>
+<p>
+  -->
+  <br>
+    <b>Can I bring my dog/cat/pet squirrel? - <em>Kann ich mein(en) Hund/Katze/Eichhörnchen mitbringen?</em> </b>
+  </p>
+  <p>
+    There are strictly no animals allowed, due to severe allergies.
+  </p>
+<p><em>
+    Tiere sind am Ort der Feier auf Grund von Allergien strikt verboten.
+    </em>
+  </p>
+
+<p>
+  <br>
+  <b>What time does the party start? - <em> Um wie viel Uhr beginnt die Feier? </em></b>
+</p>
+<p> The party starts at 4 pm. </p>
+<p><em> Die Feier beginnt um 4 Uhr. </em> <p>
+    
+
+<p>
+  <br>
+  <b>Time of arrival and depature at the accommodation - <em> Anreise- und Abreisezeiten in den Unterkünften </em> </b>
+
+  <p> You can arrive any time between lunchtime on Friday and Saturday at 3 pm at the very latest. Depature is by 12 pm on Sunday. </p>
+
+  <p><em>Anreise ist von Freitagmittag bis allerspätestens um 3  Uhr am Samstag. Abreise ist am Sonntag bis 12 Uhr. </em></p>
+</p>
+
+  <p>
+    <br>
+    <b>How do I get from my accommodation to the venue? - <em> Wie komme ich von der Unterkunft zur Feier? </em> </b>
+  <p>
+    We will organise a shuttle bus between the accommodation we have booked and the events venue, to allow everyone to enjoy the party to their fullest. You are also welcome to drive your own car. If you have booked independent accommodation, please make your own arrangements.
+  </p>
+
+  <p><em>
+      Wir organisieren einen  Shuttlebus von den Unterkünften die wir gebucht haben und dem Ort der Feier und zurück, damit alle die Feier geniessen können. Du kannst auch gerne mit dem eigenen Auto kommen. Bitte organisiere deinen Transport selber, falls du deine eigene Unterkunft gebucht hast.
+    </em>
+  </p>
+  
+  <p>
+    <br>
+    <b>
+    Is there a dress code? - <em> Gibt es einen dress code? </em>
+    </b>
+    <p>
+      Not really. We are planning on a relaxed garden party so aim for summery smart casual. Please make sure your shoes can be worn on the grass.
+    </p>
+    <p>
+      <em>
+	Nicht wirklich! Wir planen ein entspanntes Gartenfest, also sommerlich/smart casual. Bitte berücksichtigt, dass Eure Schuhe auf dem Rasen getragen werden können.
+	</em>
+      </p>
+</div>
+
 <div class="bgimg-6 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-white w3-wide">RSVP</span>
@@ -337,7 +427,8 @@ body, html {
 
 <div class="w3-content w3-container w3-padding-64" id="RSVP">
     <div class="w3-center">
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: beckmann.yates@gmail.com<br>
+      <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+      Email: beckmann.yates@gmail.com<br>
         <p>
         Please let us know if you are coming by filling out <a href="https://goo.gl/forms/Bf4WeMVjSr5k8v1R2">this Google form</a>. Remember you can contact us if you have any more questions.<br>
         <em>Lass uns wissen ob du kommen kannst indem du <a href="https://goo.gl/forms/Bf4WeMVjSr5k8v1R2">dieses Google form</a> ausfüllst. Für weitere Fragen kannst du uns per email kontaktieren.</em>
